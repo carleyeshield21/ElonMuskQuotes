@@ -24,7 +24,7 @@ rand_photo = random.choice(os.listdir('elon_musk_img'))
 def change_img():
     # pass
     new_photo = PhotoImage(file='elon_musk_img/elon_astronaut.png')
-    color = ['red','blue','yellow']
+    color = ['red','blue','yellow','#b6a066','#a47afe','#205a13','#760bbb','#f0881f']
     elon_window.config(background=random.choice(color))
     new_quote = random.choice(list_quotes)
     elon_canvas.itemconfig(elon_quote,text=new_quote)
